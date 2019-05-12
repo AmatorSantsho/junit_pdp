@@ -1,3 +1,5 @@
+package com.epam.automation.junit.tests;
+
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Rule;
@@ -13,13 +15,14 @@ public abstract class BaseTest {
     public TestName testName = new TestName();
 
     @BeforeClass
-    public static void beforeAllTests(){
+    public static void beforeAllTests() {
         System.out.println("Tests started...");
-        startTime= new Date().getTime();
+        startTime = new Date().getTime();
 
     }
+
     @AfterClass
-    public static void afterAllTests(){
+    public static void afterAllTests() {
         System.out.println("Tests evaluation is done.");
         System.out.println("Duration time is " + (new Date().getTime() - startTime) + "ms");
     }
