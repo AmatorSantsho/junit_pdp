@@ -4,6 +4,6 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({IntegerUtilsTest.class, StringUtilsTest.class})
+@Suite.SuiteClasses({StringUtilsTest.class,IntegerUtilsTest.class})
 public class SuiteTestClass {
 }
